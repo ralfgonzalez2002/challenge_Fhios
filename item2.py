@@ -23,4 +23,4 @@ def poker(*_poker):
 
       counter=0
       counter2 +=1
-print(poker('4h','4s','Ad','4p','4s'))
+print(poker('4h','8s','4d','4p','4s'))

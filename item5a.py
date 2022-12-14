@@ -13,7 +13,7 @@ def corta_palabras(texto, max_char):
     lista_actualizada = []
     for i in range(len(lista)):
         if len(lista[i]) > max_char:
-            lista_actualizada.append(lista[i][:-max_char] + "@")
+            lista_actualizada.append(lista[i][:max_char] + "@")
         else:
             lista_actualizada.append(lista[i])
     for j in lista_actualizada:

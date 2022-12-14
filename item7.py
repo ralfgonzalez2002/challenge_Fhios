@@ -14,7 +14,8 @@ class Item7(unittest.TestCase):
 
 
     def test_buscar_coincidencias(self):
-        self.page_Fhios.buscar_coincidencias('Fhios', self.page_Fhios.lista_fhios)
+        self.page_Fhios.cosa("Fhios", self.page_Fhios.lista_fhios, self.page_Fhios.lista_btns)
+
 
 
     def tearDown(self):

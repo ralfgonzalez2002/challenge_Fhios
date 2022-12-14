@@ -13,17 +13,17 @@ def corta_palabras(texto, max_char):
     lista_actualizada = []
     for i in range(len(lista)):
         if lista[i][-1] == "." and i != len(lista) - 1:
-            lista_actualizada.append(lista[i][:-max_char] + "@")
+            lista_actualizada.append(lista[i][:max_char] + "@")
             lista_actualizada.append(lista[i][-1].replace(".", " STOP"))
 
         elif lista[i][-1] == "." and i == len(lista) - 1:
-            lista_actualizada.append(lista[i][:-max_char] + "@")
+            lista_actualizada.append(lista[i][:max_char] + "@")
             lista_actualizada.append(lista[i][-1].replace(".", " STOPSTOP"))
 
         elif len(lista[i]) > max_char:
             if lista[i][-1] == ".":
                 lista[i][-1].replace(".", )
-            lista_actualizada.append(lista[i][:-max_char] + "@")
+            lista_actualizada.append(lista[i][:max_char] + "@")
 
         elif len(lista[i]) <= max_char:
             lista_actualizada.append(lista[i])
@@ -33,4 +33,4 @@ def corta_palabras(texto, max_char):
     return print(texto_nuevo)
 
 
-corta_palabras("Desafio larguisimo. Dias de muchisimo trabajo.", 4)
+corta_palabras("Desafio larguisimo. Dias de muchisimo trabajo.", 5)

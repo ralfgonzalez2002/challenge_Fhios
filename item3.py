@@ -3,8 +3,7 @@ Mes, Año) (donde Día, Mes y Año son números enteros) calcule el día siguien
 en el mismo formato.'''
 
 def diaSiguienteA(dia, mes, anio):
-    meses = {1:"Ene", 2:"Feb", 3:"Mar", 4:"Abr", 5:"May", 6:"Jun", 7:"Jul", 8:"Ago", 9:"Sep", 10:"Oct", 11:"Nov",
-             12:"Dic"}
+
     bisiesto = False
 
     if anio % 400 == 0:
@@ -31,7 +30,7 @@ def diaSiguienteA(dia, mes, anio):
             anio += 1
         else:
             mes += 1
-    return (dia, meses.get(mes), anio)
+    return (dia, mes, anio)
 
 
-print(diaSiguienteA(28, 2, 2022))
+print(diaSiguienteA(31, 12, 2022))

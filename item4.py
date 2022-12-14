@@ -32,10 +32,10 @@ def diaSiguienteA(dia, mes, anio):
             anio += 1
         else:
             for i in meses:
-                print(meses[i])
+
                 if mes == meses[i]:
                     mes = meses[i + 1]
                     break
     return (dia, str(mes), anio)
 
-print(diaSiguienteA(31, "Dic", 2011))
+print(diaSiguienteA(28, "Feb", 2011))
